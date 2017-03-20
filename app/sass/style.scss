@@ -1,0 +1,44 @@
+@import "mixins"; // Описываем стили страницы на scss
+
+.body {
+    font-size: 100%;
+}
+
+.content-wrapper {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.footer__top_theme_darkGray,
+.header__navBar_theme_darkGray,
+.services_theme_darkGray {
+    background-color: #2a2d32;
+}
+
+.header__search-form-input_theme_gray {
+    background-color: #35383c;
+}
+
+.newsAndBanners_theme_lightGray {
+    background-color: #f7f7f7;
+}
+
+.footer__bottom_theme_gray {
+    background-color: #35383c;
+}
+@include headerBlocks;
+@include headerNavbar;
+@include slider;
+@include advantages;
+@include services;
+@include newsAndBanners;
+@include brands;
+@include footer;
+
+.a {
+    text-decoration: none;
+}
+
+.h1 {
+    font-family: 'Ubuntu', sans-serif;
+}
